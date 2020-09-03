@@ -1,7 +1,7 @@
 import os
 from csv import writer
+from pyresparser import ResumeParser
 try:
-	from pyresparser import ResumeParser
 	dirc = 'cvs'
 	for files in os.listdir(dirc):
 		data = ResumeParser(dirc + '/' + files).get_extracted_data()
